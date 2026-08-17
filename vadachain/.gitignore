@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+chroma_data/
+*.log
+backend/chain/abi/VadaChainEscrow.json
+backend/chain/deployed_address.txt
+contracts/artifacts/
+contracts/cache/
