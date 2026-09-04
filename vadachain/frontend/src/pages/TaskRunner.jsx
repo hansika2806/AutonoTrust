@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Play, Loader2, CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000';
 const EXPLORER_BASE = 'https://amoy.polygonscan.com/tx/';
 
 export default function TaskRunner() {

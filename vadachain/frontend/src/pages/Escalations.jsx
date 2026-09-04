@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { RefreshCw, CheckCircle, XCircle, AlertOctagon, Loader2 } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000';
 const EXPLORER_BASE = 'https://amoy.polygonscan.com/tx/';
 
 export default function Escalations() {
