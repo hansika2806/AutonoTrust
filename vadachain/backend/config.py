@@ -10,7 +10,7 @@ load_dotenv()
 GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
 OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
 GROQ_MODEL: str = "llama-3.3-70b-versatile"
-OPENROUTER_MODEL: str = "meta-llama/llama-3.1-8b-instruct:free"
+OPENROUTER_MODEL: str = "deepseek/deepseek-r1-0528:free"
 OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
 
 # === Blockchain ===
