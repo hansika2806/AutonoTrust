@@ -41,7 +41,7 @@ def call_llm(
         resp = client.chat.completions.create(**kwargs)
         return resp.choices[0].message.content or ""
     except Exception as e:
-        logger.warning(f"Groq call failed ({e}), falling back to OpenRouter...")
+        logger.error(f"Groq call failed — {type(e).__name__}: {e}")
 
     # --- Fallback: OpenRouter ---
     try:
