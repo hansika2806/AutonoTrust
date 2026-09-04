@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Chroma (rebuilt at runtime)
+chroma_data/
+
+# Frontend (deployed separately)
+frontend/
+
+# Contracts (not needed at runtime)
+contracts/
+
+# Docs & misc
+*.pdf
+pdf_pages/
+*.log
+.env
